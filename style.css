@@ -1,0 +1,117 @@
+/* Global Base Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    background: url('https://hirehimachalcab.com/images/uploads/image8.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #2c3e50;
+    line-height: 1.7;
+    position: relative;
+  }
+  
+  /* Overlay for readability and transparency */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+  }
+  
+  /* Header Style */
+  header {
+    text-align: center;
+    background: rgba(25, 42, 86, 0.8);
+    color: white;
+    padding: 40px 20px;
+    border-bottom: 4px solid #718093;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7em;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: rgba(44, 62, 80, 0.9);
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    padding: 12px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  nav a:hover {
+    background: #f1c40f;
+    color: #2c3e50;
+  }
+  
+  /* Main Content Section */
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  p, li {
+    font-size: 1.05em;
+  }
+  
+  /* Button */
+  .button {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  .button:hover {
+    background: #1abc9c;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgba(44, 62, 80, 0.85);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 60px;
+    border-top: 2px solid #f1c40f;
+  }
+  .caption {
+    text-align: left;
+    color: white;
+    padding: 20px;
+    font-size: 1.1em;
+    max-height: 200px; /* set a scroll limit */
+    overflow-y: auto;  /* enables scroll */
+    background-color: rgba(0,0,0,0.7); /* optional: improves readability */
+    border-radius: 5px;
+  }
+  
